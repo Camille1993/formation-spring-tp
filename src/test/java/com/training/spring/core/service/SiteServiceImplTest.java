@@ -1,7 +1,7 @@
-package com.training.springcore.service;
+package com.training.spring.core.service;
 
-import com.training.springcore.model.Captor;
-import com.training.springcore.model.Site;
+import com.training.spring.core.model.Captor;
+import com.training.spring.core.model.Site;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Set;
 

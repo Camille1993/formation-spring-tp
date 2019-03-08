@@ -1,10 +1,11 @@
-package com.training.springcore.service;
+package com.training.spring.core.service;
 
-import com.training.springcore.model.Captor;
+import com.training.spring.core.model.Captor;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-
+@Service
 public class CaptorServiceImpl implements CaptorService{
 
     @Override

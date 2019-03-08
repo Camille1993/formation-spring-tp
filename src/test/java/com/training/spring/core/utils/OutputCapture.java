@@ -1,4 +1,4 @@
-package com.training.springcore.utils;
+package com.training.spring.core.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

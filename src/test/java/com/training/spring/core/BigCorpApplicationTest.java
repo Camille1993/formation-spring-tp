@@ -1,6 +1,6 @@
-package com.training.springcore;
+package com.training.spring.core;
 
-import com.training.springcore.utils.OutputCapture;
+import com.training.spring.core.utils.OutputCapture;
 import org.junit.Rule;
 import org.junit.Test;
 

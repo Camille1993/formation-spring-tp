@@ -1,4 +1,4 @@
-package com.training.springcore.model;
+package com.training.spring.core.model;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -14,6 +14,10 @@ public class Captor {
      */
     private String name;
 
+    /**
+     * Captor powerSource
+     */
+    public PowerSource powerSource;
     @Deprecated
     public Captor() {
         // Use for serializer or deserializer
@@ -42,6 +46,15 @@ public class Captor {
     public void setName(String name) {
         this.name = name;
     }
+
+    public PowerSource getPowerSource(){
+        return powerSource;
+    }
+
+    public void setPowerSource(){
+        this.powerSource = powerSource;
+    }
+
 
     @Override
     public boolean equals(Object o) {

@@ -1,6 +1,6 @@
-package com.training.springcore.service;
+package com.training.spring.core.service;
 
-import com.training.springcore.model.Captor;
+import com.training.spring.core.model.Captor;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
