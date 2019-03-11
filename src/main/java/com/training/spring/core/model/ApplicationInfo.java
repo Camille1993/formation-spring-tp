@@ -1,6 +1,5 @@
 package com.training.spring.core.model;
 
-
 import java.util.Set;
 
 public class ApplicationInfo {

@@ -1,8 +1,6 @@
 package com.training.spring.core.config;
 
 import com.training.spring.core.model.ApplicationInfo;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;

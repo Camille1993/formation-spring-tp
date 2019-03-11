@@ -3,9 +3,7 @@ package com.training.spring.core.service.measure;
 import com.training.spring.core.model.Captor;
 import com.training.spring.core.model.Measure;
 import com.training.spring.core.model.MeasureStep;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;

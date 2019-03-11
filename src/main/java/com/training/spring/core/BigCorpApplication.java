@@ -26,10 +26,10 @@ public class BigCorpApplication {
         System.out.println("plus d'information sur " + applicationInfo.getWebSiteUrl());
         System.out.println("=============================================================");
 
-        SiteService siteServiceDev =context.getBean(SiteService.class);
-        System.out.println(siteServiceDev.findById("siteA"));
+        SiteService siteService =context.getBean(SiteService.class);
+        System.out.println(siteService.findById("siteA")+"\n");
 
-        siteServiceDev.readFile("file:///Users//Acer//Documents//workspace//formation-spring-tp-core//formation-spring-tp/loremFileSystem.txt");
+        siteService.readFile("classpath:lorem.txt");
 
     }
 }
