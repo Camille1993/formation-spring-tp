@@ -3,9 +3,10 @@ package com.training.spring.core.service;
 import com.training.spring.core.model.Captor;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
-
 
 public class CaptorServiceImplTest {
     private CaptorServiceImpl captorService = new CaptorServiceImpl();

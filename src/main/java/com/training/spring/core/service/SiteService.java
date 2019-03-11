@@ -4,4 +4,6 @@ import com.training.spring.core.model.Site;
 
 public interface SiteService {
     Site findById(String siteId);
+    void readFile(String path);
+
 }

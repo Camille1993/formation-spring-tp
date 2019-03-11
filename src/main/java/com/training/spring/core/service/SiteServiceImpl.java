@@ -2,7 +2,13 @@ package com.training.spring.core.service;
 
 import com.training.spring.core.model.Site;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Scanner;
 
 @Service
 public class SiteServiceImpl implements SiteService {
@@ -27,6 +33,18 @@ public class SiteServiceImpl implements SiteService {
         return site;
     }
 
+    @Autowired
+    private ResourceLoader resourceLoader;
 
+    public void readFile(String path){
+        Resource resource = resourceLoader.getResource(path);
 
+        try (InputStream stream = resource.getInputStream()){
+            Scanner scanner = new Scanner(stream).useDelimiter("\\n");
+            while (scanner.hasNext()){
+                System.out.println(scanner.next());
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }}
 }
